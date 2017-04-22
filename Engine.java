@@ -186,13 +186,14 @@ public class Engine {
     
 public void quotes(){
 Random switcher= new Random();
+setFontSize(50);
 switch(switcher)
 {
-    case 1: UI.println("There's a blessing in the storm!"); break;
-    case 2: UI.println("Hold on, pain ends"); break;
-    case 3: UI.println("Just wing it!"); break;
-    case 4: UI.println("YOU got this!"); break;
-    default: UI.println("Keep going one cloud at a time"); break;
+    case 1: drawString("There's a blessing in the storm!",50,510); break;
+    case 2: drawString("Hold on, pain ends",50,510); break;
+    case 3: drawString("Just wing it!",50,510); break;
+    case 4: drawString("YOU got this!", 50,510); break;
+    default: drawString("Keep going one cloud at a time",50,510); break;
 }
     
     
