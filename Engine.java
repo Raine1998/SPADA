@@ -24,12 +24,11 @@ public class Engine {
     public Engine()
     {
         UI.initialise();
-        UI.setWindowSize(1200, 700);
         UI.setDivider(0.0);
-
+        UI.setWindowSize(1200, 700);
+        
         UI.setKeyListener(this::direction);   
         UI.setFontSize(20);
-        UI.setDivider(0.0);
         UI.addButton( "Play", this::playGame);
         UI.addButton( "Quit", UI::quit);
     }
@@ -85,7 +84,7 @@ public class Engine {
         cloudB.setMood(mood);
         cloudB.setX( cloudB.getX() - speed * 2);
         if(up && bird.getY() > 0){bird.setY(bird.getY() - 15) ;}
-        else if (bird.getY() < 490 - bird.getHeight()){bird.setY(bird.getY() + 15) ;}
+        else if (bird.getY() < 485 - bird.getHeight()){bird.setY(bird.getY() + 15) ;}
 
     }
 
