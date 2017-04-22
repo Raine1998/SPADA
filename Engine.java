@@ -184,5 +184,19 @@ public class Engine {
     public static void main(String[] args){
         Engine obj = new Engine();
     }
+    
+public void quotes(){
+Random switcher= new Random();
+switch(switcher)
+{
+    case 1: UI.println("There's a blessing in the storm!"); break;
+    case 2: UI.println("Hold on, pain ends"); break;
+    case 3: UI.println("Just wing it!"); break;
+    case 4: UI.println("YOU got this!"); break;
+    default: UI.println("Keep going one cloud at a time"); break;
+}
+    
+    
+}
 
 }
