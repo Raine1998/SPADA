@@ -184,18 +184,35 @@ public class Engine {
         Engine obj = new Engine();
     }
     
-public void quotes(){
-Random switcher= new Random();
-setFontSize(50);
-switch(switcher)
-{
-    case 1: drawString("There's a blessing in the storm!",50,510); break;
-    case 2: drawString("Hold on, pain ends",50,510); break;
-    case 3: drawString("Just wing it!",50,510); break;
-    case 4: drawString("YOU got this!", 50,510); break;
-    default: drawString("Keep going one cloud at a time",50,510); break;
-}
-    
+ public void quotes(){
+
+        UI.setFontSize(50);
+        switch(randInt(1000))
+        {
+            case 1: 
+            UI.setColor(Color.white);
+            UI.fillRect(50, 500, 800, 300);
+            UI.setColor(Color.black);
+            UI.drawString("There's a blessing in the storm!",50,600); break;
+            case 2:
+            UI.setColor(Color.white);
+            UI.fillRect(50, 500, 800, 300);
+            UI.setColor(Color.black);
+            UI.drawString("Hold on, pain ends",50,600); break;
+            case 3:
+            UI.setColor(Color.white);
+            UI.fillRect(50, 500, 800, 300);
+            UI.setColor(Color.black);
+            UI.drawString("Just wing it!",50,600); break;
+            case 4: 
+            UI.setColor(Color.white);
+            UI.fillRect(50, 500, 800, 300);
+            UI.setColor(Color.black);
+            UI.drawString("YOU got this!", 50,600); break;
+            default: break;
+        }
+
+    } 
     
 }
 
